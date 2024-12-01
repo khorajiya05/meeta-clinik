@@ -1,89 +1,169 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/11.0.2/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/11.0.2/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Hanif Bhai Parasara - Family Doctor Care</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E3F2FD;
+            /* Light blue for background */
+        }
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
+        header {
+            background-color: #0D47A1;
+            /* Deep blue for header */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .cta {
+            background-color: #4CAF50;
+            /* Fresh green for call-to-action */
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .cta a {
+            color: white;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #BBDEFB;
+            /* Light blue for service list */
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #0D47A1;
+            /* Deep blue for footer */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Carousel styling */
+        .slider {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 99.6%;
+            height: 300px;
+            object-fit: contain;
+        }
     </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+</head>
+
+<body>
+    <header>
+        <h1>Dr. Hanif Bhai Parasara - Your Trusted Family Doctor</h1>
+        <p>Providing Expert Medical Care in Family Doctor Care</p>
+        <nav>
+            <a href="#about">Meet Your Expert Doctor</a>
+            <a href="#services">Expert Medical Services We Offer</a>
+            <a href="#contact">Get In Touch</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Meet Your Expert Doctor</h2>
+        <p>With over 17 years of experience in family care, Dr. Hanif Bhai Parasara is dedicated to providing quality
+            healthcare.</p>
+        <!-- Image Carousel -->
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="../assets/images/doctor1.jpeg" alt="Image 1"></div>
+                <div class="slide"><img src="../assets/images/tool1.png" alt="Image 1"></div>
+                <div class="slide"><img src="../assets/images/tritment1.png" alt="Image 1"></div>
+                <div class="slide"><img src="../assets/images/doctor2.jpeg" alt="Image 2"></div>
+                <!-- Add more slides as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Expert Medical Services We Offer</h2>
+        <ul>
+            <li>Private Employee Consultation</li>
+            <li>BHMS Doctor Services</li>
+            <li>General Medicine</li>
+            <li>Skin Problems Expert</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p><strong>Clinic Address:</strong> Gujarat, Morbi, Wankaner City</p>
+        <p><strong>Phone:</strong> 9723319220</p>
+        <p><strong>Email:</strong> miraclinic50@gmail.com</p>
+        <div class="cta">
+            <p>Contact us today for expert healthcare solutions!</p>
+            <a href="mailto:miraclinic50@gmail.com">Email Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Mira Clinic. All rights reserved.</p>
+    </footer>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        let slides = document.querySelector(".slides");
+        let slideIndex = 0;
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        function showSlide(index) {
+            slides.style.transform = `translateX(-${index * 100}%)`;
         }
-      });
+
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % slides.children.length;
+            showSlide(slideIndex);
+        }
+
+        setInterval(nextSlide, 3000); // Change slide every 3 seconds  
     </script>
-  </body>
+</body>
+
 </html>
