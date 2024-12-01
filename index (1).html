@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Hanif Bhai Parasara - Family Doctor Care</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E3F2FD;
+            /* Light blue for background */
+        }
+
+        header {
+            background-color: #0D47A1;
+            /* Deep blue for header */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .cta {
+            background-color: #4CAF50;
+            /* Fresh green for call-to-action */
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .cta a {
+            color: white;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #BBDEFB;
+            /* Light blue for service list */
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #0D47A1;
+            /* Deep blue for footer */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Carousel styling */
+        .slider {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 99.6%;
+            height: 300px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Dr. Hanif Bhai Parasara - Your Trusted Family Doctor</h1>
+        <p>Providing Expert Medical Care in Family Doctor Care</p>
+        <nav>
+            <a href="#about">Meet Your Expert Doctor</a>
+            <a href="#services">Expert Medical Services We Offer</a>
+            <a href="#contact">Get In Touch</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Meet Your Expert Doctor</h2>
+        <p>With over 17 years of experience in family care, Dr. Hanif Bhai Parasara is dedicated to providing quality
+            healthcare.</p>
+        <!-- Image Carousel -->
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="./assets/images/tool1.png" alt="Image 1"></div>
+                <div class="slide"><img src="./assets/images/doctor1.jpeg" alt="Image 1"></div>
+                <div class="slide"><img src="./assets/images/tritment1.png" alt="Image 1"></div>
+                <div class="slide"><img src="./assets/images/doctor2.jpeg" alt="Image 2"></div>
+                <!-- Add more slides as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Expert Medical Services We Offer</h2>
+        <ul>
+            <li>Private Employee Consultation</li>
+            <li>BHMS Doctor Services</li>
+            <li>General Medicine</li>
+            <li>Skin Problems Expert</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p><strong>Clinic Address:</strong> Gujarat, Morbi, Wankaner City</p>
+        <p><strong>Phone:</strong> 9723319220</p>
+        <p><strong>Email:</strong> miraclinic50@gmail.com</p>
+        <div class="cta">
+            <p>Contact us today for expert healthcare solutions!</p>
+            <a href="mailto:miraclinic50@gmail.com">Email Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Mira Clinic. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slides = document.querySelector(".slides");
+        let slideIndex = 0;
+
+        function showSlide(index) {
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % slides.children.length;
+            showSlide(slideIndex);
+        }
+
+        setInterval(nextSlide, 3000); // Change slide every 3 seconds  
+    </script>
+</body>
+
+</html>
